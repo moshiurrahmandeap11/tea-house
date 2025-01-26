@@ -30,11 +30,30 @@
             }
         }
     </script>
+    <script>
+        module.exports = {
+            theme: {
+                extend: {
+                    lineHeight: {
+                        'extra-loose': '2.5',
+                    },
+                },
+            },
+            variants: {},
+            plugins: [],
+        };
+
+    </script>
 
     <style>
         .font-manrope {
             font-family: "Manrope", serif;
         }
+        /* Custom class for placeholder line-height */
+.placeholder-line-height::placeholder {
+  line-height: 2.5; /* Adjust the value as needed */
+}
+
     </style>
 </head>
 
@@ -184,7 +203,7 @@
 
 
                 <!-- text section -->
-                <div class="flex justify-center items-center overflow-hidden">
+                <div class="flex justify-center items-center overflow-hidden" style="background-image: url(https://i.ibb.co.com/bvMmc3p/bg-cup.png); background-repeat: no-repeat; background-position: bottom;">
                     <div class="mb-8">
                         <h3 class="text-[#f4f4f4] font-extrabold text-3xl lg:text-5xl mb-5">Meet Our Super Clients</h3>
                         <p class="text-[#f4f4f4] font-medium text-base mb-8">There are many variations of passages of
@@ -248,14 +267,17 @@
         <!-- news and event section start -->
         <section class="mb-32">
             <h3 class="text-[#1c1c1c] font-extrabold text-5xl text-center mb-5">News & Events</h3>
-            <p class="font-medium text-[#777777] text-center text-base mb-13">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            <p class="font-medium text-[#777777] text-center text-base mb-13">There are many variations of passages of
+                Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                randomised words which don't look even slightly believable. </p>
             <div class="grid lg:grid-cols-3 gap-6">
                 <div class="shadow-lg p-5">
                     <img class="mb-5" src="./images/news-1.png" alt="">
                     <div>
                         <p class="font-medium text-[#777777] text-base mb-3">Feb 05, 2027</p>
                         <h3 class="text-[#1c1c1c] font-extrabold text-xl mb-3">Collecting 8 points for discount</h3>
-                        <p class="font-medium text-[#777777] text-base mb-3">There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="font-medium text-[#777777] text-base mb-3">There are many variations of passages of
+                            Lorem Ipsum available.</p>
                         <h4 class="font-extrabold text-[#1c1c1c] text-base mb-5">Learn More</h4>
                     </div>
                 </div>
@@ -264,7 +286,8 @@
                     <div>
                         <p class="font-medium text-[#777777] text-base mb-3">Feb 05, 2027</p>
                         <h3 class="text-[#1c1c1c] font-extrabold text-xl mb-3">Collecting 8 points for discount</h3>
-                        <p class="font-medium text-[#777777] text-base mb-3">There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="font-medium text-[#777777] text-base mb-3">There are many variations of passages of
+                            Lorem Ipsum available.</p>
                         <h4 class="font-extrabold text-[#1c1c1c] text-base mb-5">Learn More</h4>
                     </div>
                 </div>
@@ -273,7 +296,8 @@
                     <div>
                         <p class="font-medium text-[#777777] text-base mb-3">Feb 05, 2027</p>
                         <h3 class="text-[#1c1c1c] font-extrabold text-xl mb-3">Collecting 8 points for discount</h3>
-                        <p class="font-medium text-[#777777] text-base mb-3">There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="font-medium text-[#777777] text-base mb-3">There are many variations of passages of
+                            Lorem Ipsum available.</p>
                         <h4 class="font-extrabold text-[#1c1c1c] text-base mb-5">Learn More</h4>
                     </div>
                 </div>
@@ -282,7 +306,59 @@
         <!-- news and event section end -->
     </main>
     <!-- footer start here -->
-     
+    <footer class="bg-red-100 w-full lg:w-full px-4 py-10 lg:px-[230px] lg:py-[130px]">
+        <div class="lg:w-[80%] lg:mx-auto grid lg:grid-cols-4 lg:gap-25">
+            <div>
+                <img class="mb-20" src="./images/cup.png" alt="">
+                <div>
+                    <h3 class="text-[#1c1c1c] font-bold text-2xl mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="text-black font-normal text-xl mb-2">home</li>
+                        <li class="text-black font-normal text-xl mb-2">About Us</li>
+                        <li class="text-black font-normal text-xl mb-2">Insurance</li>
+                        <li class="text-black font-normal text-xl mb-2">Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-37">
+                <div>
+                    <h3 class="text-[#1c1c1c] font-bold text-2xl mb-4">Our Services</h3>
+                    <ul>
+                        <li class="text-black font-normal text-xl mb-2">Life Insurance</li>
+                        <li class="text-black font-normal text-xl mb-2">CarInsurance</li>
+                        <li class="text-black font-normal text-xl mb-2">Health Insurance</li>
+                        <li class="text-black font-normal text-xl mb-2">House Insurance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-37">
+                <div>
+                    <h3 class="text-[#1c1c1c] font-bold text-2xl mb-4">Help</h3>
+                    <ul>
+                        <li class="text-black font-normal text-xl mb-2">FAQS</li>
+                        <li class="text-black font-normal text-xl mb-2">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-5 lg:w-90">
+                <div class="flex gap-4">
+                    <p class="font-normal text-xl mt-2">Ready to get started?</p>
+                    <button
+                        class="mb-18 bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg font-bold text-white text-xl"
+                        type="submit">Get Started</button>
+                </div>
+                <h3 class="font-medium text-2xl text-gray-600 mb-15">Subscribe to our <br> newsletter</h3>
+                <input class=" mb-10 font-normal text-black text-xl border-b-1 pb-4 placeholder-line-height" type="text"
+                    placeholder="Email Address"><i class="fa-solid fa-chevron-right text-white ml-4 bg-orange-600 rounded-full px-4 py-3"></i>
+                <div>
+                    <i class=" mr-5 text-2xl fa-brands fa-facebook"></i>
+                    <i class=" mr-5 text-2xl fa-brands fa-twitter"></i>
+                    <i class=" mr-5 text-2xl fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
 </body>
 
 </html>
